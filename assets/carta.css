@@ -66,3 +66,20 @@
 #mobile-menu a{display:block;padding:12px 4px;font-weight:600;font-size:16px;color:hsl(var(--foreground));text-decoration:none;border-bottom:1px solid hsl(var(--border))}
 #mobile-menu a.cta{margin-top:14px;border:0;text-align:center;background:hsl(var(--primary));color:#fff;border-radius:.5rem}
 @media (min-width:1024px){#mobile-menu{display:none!important}}
+
+/* Formulario de newsletter propio (envía a Brevo: lista "Suscripciones landing IC") */
+.nl-form{max-width:520px;margin:12px auto 0;text-align:left;scroll-margin-top:110px}
+.nl-row{display:flex;gap:10px}
+.nl-row input{flex:1;min-width:0;height:52px;padding:0 16px;font:inherit;font-size:16px;color:hsl(var(--foreground));background:#fff;border:1px solid hsl(var(--border));border-radius:.5rem}
+.nl-row input:focus{outline:2px solid hsl(var(--primary));outline-offset:1px;border-color:hsl(var(--primary))}
+.nl-row button{height:52px;padding:0 22px;font:inherit;font-size:16px;font-weight:600;color:#fff;background:hsl(var(--primary));border:0;border-radius:.5rem;cursor:pointer;white-space:nowrap;box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+.nl-row button:hover{opacity:.9}
+.nl-row button[disabled]{opacity:.6;cursor:wait}
+.nl-hp{position:absolute!important;left:-9999px!important;height:0;width:0;opacity:0}
+.nl-legal{font-size:13px!important;line-height:1.5;color:hsl(var(--muted-foreground))!important;margin:10px 0 0!important;text-align:center}
+.nl-legal a{color:inherit;text-decoration:underline}
+.nl-msg{font-size:15px!important;font-weight:600;margin:10px 0 0!important;text-align:center;min-height:0}
+.nl-msg.ok{color:#15803d}.nl-msg.err{color:hsl(var(--destructive))}
+.nl-done .nl-row,.nl-done .nl-legal{display:none}
+.nl-done .nl-msg{font-size:18px!important;padding:14px;border-radius:.75rem;background:#f0fdf4}
+@media (max-width:520px){.nl-row{flex-direction:column}.nl-row input{flex:none;width:100%}.nl-row button{width:100%}}
