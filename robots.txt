@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /portada-anterior/
+Allow: /
+Sitemap: https://www.carlosmartinezpardo.com/sitemap.xml
