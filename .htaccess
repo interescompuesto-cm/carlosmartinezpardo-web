@@ -1,0 +1,6 @@
+Options -Indexes
+DirectorySlash On
+ErrorDocument 404 /404.html
+RewriteEngine On
+# Simulador retirado
+RewriteRule ^simula-tu-futuro/?$ / [R=301,L]
